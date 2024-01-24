@@ -1,0 +1,279 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = PrimarySchoolCA.Client
+build_property.RootNamespace = PrimarySchoolCA.Client
+build_property.ProjectDir = C:\PrimarySchoolApp\Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\PrimarySchoolApp\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/PrimarySchoolApp/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AcademicSessions.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNhZGVtaWNTZXNzaW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddAcademicSession.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQWNhZGVtaWNTZXNzaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddApplicationRole.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQXBwbGljYXRpb25Sb2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddApplicationUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQXBwbGljYXRpb25Vc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddAssessmentSetup.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQXNzZXNzbWVudFNldHVwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddAssessmentType.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQXNzZXNzbWVudFR5cGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddAttendance.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQXR0ZW5kYW5jZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddClassRegister.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQ2xhc3NSZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddClassRegisterStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQ2xhc3NSZWdpc3RlclN0dWRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddLocalGovtArea.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkTG9jYWxHb3Z0QXJlYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddParentsOrGuardian.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkUGFyZW50c09yR3VhcmRpYW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddSchool.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU2Nob29sLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddSchoolClass.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU2Nob29sQ2xhc3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddSchoolType.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU2Nob29sVHlwZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddState.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU3RhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU3R1ZGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddSubject.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU3ViamVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddSubjectSchoolType.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU3ViamVjdFNjaG9vbFR5cGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AddTerm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVGVybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/ApplicationRoles.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25Sb2xlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/ApplicationUsers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25Vc2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AssessmentSetups.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzZXNzbWVudFNldHVwcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/AssessmentTypes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzZXNzbWVudFR5cGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/Attendances.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXR0ZW5kYW5jZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/BulkAttendanceEntry.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVsa0F0dGVuZGFuY2VFbnRyeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/BulkCAEntry.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVsa0NBRW50cnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/ClassRegisters.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xhc3NSZWdpc3RlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditAcademicSession.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEFjYWRlbWljU2Vzc2lvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditApplicationUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEFwcGxpY2F0aW9uVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditAssessmentSetup.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEFzc2Vzc21lbnRTZXR1cC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditAssessmentType.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEFzc2Vzc21lbnRUeXBlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditAttendance.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEF0dGVuZGFuY2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditClassRegister.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdENsYXNzUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditClassRegisterStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdENsYXNzUmVnaXN0ZXJTdHVkZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditLocalGovtArea.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdExvY2FsR292dEFyZWEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditParentsOrGuardian.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFBhcmVudHNPckd1YXJkaWFuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditSchool.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFNjaG9vbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditSchoolClass.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFNjaG9vbENsYXNzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditSchoolType.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFNjaG9vbFR5cGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditState.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFN0YXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFN0dWRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditSubject.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFN1YmplY3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditSubjectSchoolType.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFN1YmplY3RTY2hvb2xUeXBlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/EditTerm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFRlcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/LocalGovtAreas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9jYWxHb3Z0QXJlYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/RegisterApplicationUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJBcHBsaWNhdGlvblVzZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/ResetPassword.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXRQYXNzd29yZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/SchoolClasses.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2Nob29sQ2xhc3Nlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/Schools.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2Nob29scy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/SchoolTypes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2Nob29sVHlwZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/States.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/Students.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/Subjects.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/Terms.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVybXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Pages/Unauthorized.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5hdXRob3JpemVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Shared/CulturePicker.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1bHR1cmVQaWNrZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Shared/LoginLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PrimarySchoolApp/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

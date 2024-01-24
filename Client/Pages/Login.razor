@@ -1,0 +1,19 @@
+@layout LoginLayout
+@page "/login"
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Login> L
+
+<PageTitle>@L["PageTitle.Text"]</PageTitle>
+<RadzenText Text="@L["PageTitle.Text"]" TextStyle="Radzen.Blazor.TextStyle.H5" class="mb-4" TagName="Radzen.Blazor.TagName.H2" />
+<RadzenRow>
+    <RadzenColumn SizeMD="12">
+        <RadzenTemplateForm Action="@($" account/login?redirectUrl={redirectUrl}")" Data="@("login")"
+            Method="post">
+            <RadzenAlert Shade="Radzen.Shade.Lighter" Variant="Radzen.Variant.Flat" Size="Radzen.AlertSize.Small" AlertStyle="Radzen.AlertStyle.Danger" Visible="@errorVisible">@error</RadzenAlert>
+            <RadzenAlert Shade="Radzen.Shade.Lighter" Variant="Radzen.Variant.Flat" Size="Radzen.AlertSize.Small" AlertStyle="Radzen.AlertStyle.Info" Visible="@infoVisible">@info</RadzenAlert>
+            <RadzenLogin AllowResetPassword="true" AllowRegister="true" 
+                    ResetPassword="@ResetPassword"
+                    Register="@Register" LoginText="@L["Login0.LoginText"]" PasswordRequired="@L["Login0.PasswordRequired"]" PasswordText="@L["Login0.PasswordText"]" RegisterMessageText="@L["Login0.RegisterMessageText"]" RegisterText="@L["Login0.RegisterText"]" RememberMeText="@L["Login0.RememberMeText"]" ResetPasswordText="@L["Login0.ResetPasswordText"]" UserRequired="@L["Login0.UserRequired"]" UserText="@L["Login0.UserText"]"
+            />
+        </RadzenTemplateForm>
+    </RadzenColumn>
+</RadzenRow>

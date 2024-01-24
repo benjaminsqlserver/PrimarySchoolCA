@@ -1,0 +1,78 @@
+@page "/school-types"
+
+@attribute [Authorize]
+
+<PageTitle>SchoolTypes</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="SchoolTypes" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenSplitButton Icon="get_app" Text="Export" Click="@ExportClick" Variant="Variant.Flat" Shade="Shade.Lighter">
+                    <RadzenSplitButtonItem Text="Excel" Value="xlsx" />
+                    <RadzenSplitButtonItem Text="CSV" Value="csv" />
+                </RadzenSplitButton>
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenTextBox Placeholder="Search ..." style="display: block; width: 100%" @oninput="@Search" />
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"  AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@schoolTypes" Count=count LoadData=@Grid0LoadData  TItem="PrimarySchoolCA.Server.Models.ConData.SchoolType" RowDoubleClick="@EditRow" RowExpand=@GetChildData>
+            <Columns>
+              
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.SchoolType" Property="SchoolTypeID" Title="School Type ID">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.SchoolType" Property="SchoolTypeName" Title="School Type Name">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.SchoolType" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="schoolType">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, schoolType)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+            <Template Context="schoolType">
+
+                    <RadzenStack Class="rz-my-8">
+                        <RadzenRow Gap="0" AlignItems="AlignItems.Center">
+                            <RadzenColumn Size="12" SizeMD="6">
+                                <RadzenText Visible="@(schoolType != null)" Text="SubjectSchoolTypes" TextStyle="TextStyle.H4" TagName="TagName.H2" style="margin: 0" />
+                            </RadzenColumn>
+                            <RadzenColumn Size="12" SizeMD="6">
+                                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                                    <RadzenButton Visible="@(schoolType != null)" Icon="add_circle_outline" Text="Add" Click=@(args => SubjectSchoolTypesAddButtonClick(args,schoolType)) />
+                                </RadzenStack>
+                            </RadzenColumn>
+                        </RadzenRow>
+                        <RadzenDataGrid ColumnWidth="200px" Visible="@(schoolType != null)" @ref=SubjectSchoolTypesDataGrid AllowFiltering="true" FilterMode="Radzen.FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+                          Data="@schoolType?.SubjectSchoolTypes" TItem="PrimarySchoolCA.Server.Models.ConData.SubjectSchoolType"  RowDoubleClick="@(args => SubjectSchoolTypesRowSelect(args, schoolType))">
+                          <Columns>
+                            
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.SubjectSchoolType" Property="ID" Title="ID">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.SubjectSchoolType" Property="SchoolType.SchoolTypeName" Title="School Type">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.SubjectSchoolType" Property="Subject.SubjectName" Title="Subject">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.SubjectSchoolType" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                                <Template Context="subjectSchoolTypeChild">
+                                    <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium" Shade="Shade.Lighter" Variant="Variant.Flat"
+                                        Click=@(args => SubjectSchoolTypesDeleteButtonClick(args, subjectSchoolTypeChild)) @onclick:stopPropagation="true" />
+                                </Template>
+                            </RadzenDataGridColumn>
+                          </Columns>
+                        </RadzenDataGrid>
+                    </RadzenStack>
+            </Template>
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>

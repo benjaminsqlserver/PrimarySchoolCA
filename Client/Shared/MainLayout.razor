@@ -1,0 +1,72 @@
+@inherits LayoutComponentBase
+@inject Microsoft.Extensions.Localization.IStringLocalizer<MainLayout> L
+<RadzenDialog />
+<RadzenNotification />
+<RadzenTooltip />
+<RadzenContextMenu />
+
+<RadzenLayout style="grid-template-areas: 'rz-sidebar rz-header' 'rz-sidebar rz-body';">
+    <RadzenHeader>
+        <RadzenRow JustifyContent="JustifyContent.Start" AlignItems="AlignItems.Center" Gap="0">
+            <RadzenColumn Size="5">
+                <RadzenSidebarToggle Click="@SidebarToggleClick"></RadzenSidebarToggle>
+            </RadzenColumn>
+            <RadzenColumn Size="7">
+                <RadzenStack AlignItems="AlignItems.Center" Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End">
+                <RadzenLabel Text="@L["Language.Text"]">Please Select Your Language</RadzenLabel>
+                    <CulturePicker />
+                    <RadzenProfileMenu Visible="@Security.IsAuthenticated()" Click="@ProfileMenuClick">
+                        <ChildContent>
+
+                            <RadzenProfileMenuItem Path="profile" Icon="settings" Text="@L["Profile.Text"]" />
+                            <RadzenProfileMenuItem Path="application-users" Icon="person" Text="@L["Users.Text"]" />
+                            <RadzenProfileMenuItem Path="application-roles" Icon="security" Text="@L["Roles.Text"]" />
+                            <RadzenProfileMenuItem Text="@L["Logout.Text"]" Value="Logout" Icon="power_settings_new" />
+                        </ChildContent>
+                        <Template>
+                            @Security.User?.Name
+                            <RadzenGravatar Email="@Security.User?.Name" />
+                        </Template>
+                    </RadzenProfileMenu>
+                </RadzenStack>
+            </RadzenColumn>
+        </RadzenRow>
+    </RadzenHeader>
+    <RadzenBody Expanded="@sidebarExpanded">
+        <RadzenRow class="rz-mx-auto rz-px-4 rz-pt-2 rz-pt-md-4 rz-pt-lg-6 rz-pt-xl-12 rz-pb-2 rz-pb-lg-12" Style="max-width: 1440px;">
+            <RadzenColumn Size="12">
+            @Body
+            </RadzenColumn>
+        </RadzenRow>
+    </RadzenBody>
+    <RadzenSidebar Expanded="@sidebarExpanded" style="z-index: 2">
+        <RadzenStack AlignItems="Radzen.AlignItems.Center" class="rz-py-4 rz-py-lg-6" Style="padding: var(--rz-panel-menu-item-padding); border-bottom: var(--rz-panel-menu-item-border);">
+            <RadzenImage Path="images/logo.png"  style="width: 48px; height: 48px;"></RadzenImage>
+            <RadzenText Text="PrimarySchoolCA" TextStyle="Radzen.Blazor.TextStyle.Subtitle1" class="rz-mb-0" style="color: var(--rz-sidebar-color);" />
+        </RadzenStack>
+        <RadzenPanelMenu>
+            <RadzenPanelMenuItem Text="@L["Home.Text"]" Path="" />
+            <RadzenPanelMenuItem Text="@L["Lga.Text"]" Path="local-govt-areas" />
+            <RadzenPanelMenuItem Text="@L["Schools.Text"]" Path="schools" />
+            <RadzenPanelMenuItem Text="@L["States.Text"]" Path="states" />
+            <RadzenPanelMenuItem Text="Students" Path="students" />
+            <RadzenPanelMenuItem Text="AcademicSessions" Path="academic-sessions" />
+            <RadzenPanelMenuItem Text="Subjects" Path="subjects" />
+            <RadzenPanelMenuItem Text="SchoolClasses" Path="school-classes" />
+            <RadzenPanelMenuItem Text="SchoolTypes" Path="school-types" />
+            <RadzenPanelMenuItem Text="AssessmentSetups" Path="assessment-setups" />
+            <RadzenPanelMenuItem Text="AssessmentTypes" Path="assessment-types" />
+            <RadzenPanelMenuItem Text="Terms" Path="terms" />
+            <RadzenPanelMenuItem Text="ClassRegisters" Path="class-registers" />
+            <RadzenPanelMenuItem Text="Bulk Attendance Entry" Path="bulk-attendance-entry" />
+        
+            <RadzenPanelMenuItem Text="Attendances" Path="attendances" />
+            <RadzenPanelMenuItem Text="ContinuousAssessments" Path="continuous-assessments" />
+            <RadzenPanelMenuItem Text="BulkCAEntry" Path="bulk-ca-entry" />
+        </RadzenPanelMenu>
+        <RadzenStack AlignItems="Radzen.AlignItems.Center" Gap="0" class="rz-py-4 rz-py-lg-6" Style="padding: var(--rz-panel-menu-item-padding);">
+            <RadzenText Text="PrimarySchoolCA v1.0.0" TextStyle="Radzen.Blazor.TextStyle.Caption" style="color: var(--rz-text-disabled-color);" TagName="Radzen.Blazor.TagName.P" TextAlign="Radzen.TextAlign.Center" />
+            <RadzenText Text="Copyright Ⓒ 2023" TextStyle="Radzen.Blazor.TextStyle.Caption" class="rz-mb-0" style="color: var(--rz-text-disabled-color);" TagName="Radzen.Blazor.TagName.P" TextAlign="Radzen.TextAlign.Center" />
+        </RadzenStack>
+    </RadzenSidebar>
+</RadzenLayout>

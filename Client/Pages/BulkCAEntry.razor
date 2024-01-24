@@ -1,0 +1,97 @@
+@page "/bulk-ca-entry"
+
+@attribute [Authorize]
+@using Radzen
+@using Radzen.Blazor
+@using PrimarySchoolCA.Server.Models.ConData
+
+<PageTitle>BulkCAEntry</PageTitle>
+<RadzenRow>
+    <RadzenColumn Size="12">
+        <RadzenText Text="BulkCAEntry" TextStyle="TextStyle.H3" TagName="TagName.H1" />
+    </RadzenColumn>
+</RadzenRow>
+<RadzenRow>
+<RadzenColumn Size="3">
+<RadzenLabel Style="width: 100%" Text="Academic Session" Component="AcademicSessionID"></RadzenLabel>
+</RadzenColumn>
+<RadzenColumn Size="9">
+    <RadzenDropDown TValue="int" ValueProperty="AcademicSessionID" TextProperty="AcademicSessionName" Data="@academicSessions" LoadData="@academicSessionsLoadData" Count="@academicSessionsCount" Name="AcademicSessionID" Style="width: 100%" Placeholder="Select Academic Session" @bind-Value="@academicSessionID" />
+     <RadzenRequiredValidator Component="AcademicSessionID" DefaultValue="0" style="position: absolute" Text="Academic Session is required">
+        </RadzenRequiredValidator>
+
+</RadzenColumn>
+</RadzenRow>
+<RadzenRow>
+<RadzenColumn Size="3">
+<RadzenLabel Style="width: 100%" Text="Term" Component="TermID"></RadzenLabel>
+</RadzenColumn>
+<RadzenColumn Size="9">
+    <RadzenDropDown TValue="int" ValueProperty="TermID" TextProperty="TermName" Data="@terms" LoadData="@termsLoadData" Count="@termsCount" Name="TermID" Style="width: 100%" Placeholder="Select Term" @bind-Value="@termID" />
+   <RadzenRequiredValidator Component="TermID" DefaultValue="0" style="position: absolute" Text="Term is required">
+        </RadzenRequiredValidator>
+</RadzenColumn>
+</RadzenRow>
+
+<RadzenRow>
+<RadzenColumn Size="3">
+<RadzenLabel Style="width: 100%" Text="Class" Component="SchoolClassID"></RadzenLabel>
+</RadzenColumn>
+<RadzenColumn Size="9">
+    <RadzenDropDown TValue="int" ValueProperty="SchoolClassID" TextProperty="SchoolClassName" Data="@schoolClasses" LoadData="@schoolClassesLoadData" Count="@schoolClassesCount" Name="SchoolClassID" Style="width: 100%" Placeholder="Select Class" @bind-Value="@schoolClassID" />
+     <RadzenRequiredValidator Component="SchoolClassID" DefaultValue="0" style="position: absolute" Text="Class is required">
+        </RadzenRequiredValidator>
+</RadzenColumn>
+</RadzenRow>
+
+<RadzenRow>
+<RadzenColumn Size="3">
+<RadzenLabel Style="width: 100%" Text="Subject" Component="SubjectID"></RadzenLabel>
+</RadzenColumn>
+<RadzenColumn Size="9">
+    <RadzenDropDown  TValue="long" ValueProperty="SubjectID" TextProperty="SubjectName" Data="@subjects" LoadData="@subjectsLoadData" Count="@subjectsCount" Name="SubjectID" Style="width: 100%" Placeholder="Select Subject" @bind-Value="@subjectID" />
+     <RadzenRequiredValidator Component="SubjectID" DefaultValue="0" style="position: absolute" Text="Subject is required">
+        </RadzenRequiredValidator>
+</RadzenColumn>
+</RadzenRow>
+<RadzenRow>
+<RadzenColumn Size="3">
+<RadzenLabel Style="width: 100%" Text="Mark Obtainable" Component="MarkObtainable"></RadzenLabel>
+</RadzenColumn>
+<RadzenColumn Size="9">
+    <RadzenNumeric Style="width: 100%" TValue="int" Name="numMarkObtainable" @bind-Value="@markObtainable"></RadzenNumeric>
+     <RadzenRequiredValidator Component="numMarkObtainable style="position: absolute" Text="Mark Obtainable is required">
+        </RadzenRequiredValidator>
+</RadzenColumn>
+</RadzenRow>
+<RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="search" Text="Fetch" Variant="Variant.Flat" Click="@FetchRegisterClick"/>
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelFetchRegisterClick"   />
+          </RadzenStack>
+          <RadzenRow>
+<RadzenColumn Size="12">
+ <RadzenTabs>
+ <Tabs>
+ <RadzenTabsItem Text="Class Register">
+     <RadzenDataGrid TItem="ContinuousAssessmentViewModel" Data="@students">
+         <Columns>
+             <RadzenDataGridColumn TItem="ContinuousAssessmentViewModel" Property="AdmissionNumber" Title="Admission Number"></RadzenDataGridColumn>
+             <RadzenDataGridColumn TItem="ContinuousAssessmentViewModel" Property="FirstName" Title="First Name"></RadzenDataGridColumn>
+             <RadzenDataGridColumn TItem="ContinuousAssessmentViewModel" Property="LastName" Title="Last Name"></RadzenDataGridColumn>
+             <RadzenDataGridColumn TItem="ContinuousAssessmentViewModel" Property="MarkObtained" Title="MarkObtained">
+                 <Template>
+                     <RadzenNumeric TValue="int" Name="numMarkObtained" @bind-Value="@context.MarkObtained"></RadzenNumeric>
+                 </Template>
+             </RadzenDataGridColumn>
+         </Columns>
+     </RadzenDataGrid>
+ </RadzenTabsItem>
+ </Tabs>
+ </RadzenTabs>
+</RadzenColumn>
+
+</RadzenRow>
+<RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save CA Scores" Variant="Variant.Flat" Click="@RecordCAScoresClick" />
+    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelFetchRegisterClick" />
+</RadzenStack>

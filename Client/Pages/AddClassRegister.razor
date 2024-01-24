@@ -1,0 +1,38 @@
+@page "/add-class-register"
+
+@attribute [Authorize]
+
+<PageTitle>Add ClassRegister</PageTitle>
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save ClassRegister</RadzenAlert>
+        <RadzenTemplateForm TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegister" Data="@classRegister" Visible="@(classRegister != null)" Submit="@FormSubmit">
+          <RadzenStack>
+            <RadzenFormField Text="Academic Session" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDown Data="@academicSessionsForAcademicSessionID" TextProperty="AcademicSessionName" ValueProperty="AcademicSessionID" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@classRegister.AcademicSessionID" Name="AcademicSessionID"
+                         Count=@academicSessionsForAcademicSessionIDCount LoadData=@academicSessionsForAcademicSessionIDLoadData />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="School Class" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDown Data="@schoolClassesForSchoolClassID" TextProperty="SchoolClassName" ValueProperty="SchoolClassID" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@classRegister.SchoolClassID" Name="SchoolClassID"
+                         Count=@schoolClassesForSchoolClassIDCount LoadData=@schoolClassesForSchoolClassIDLoadData />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Term" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDown Data="@termsForTermID" TextProperty="TermName" ValueProperty="TermID" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@classRegister.TermID" Name="TermID"
+                         Count=@termsForTermIDCount LoadData=@termsForTermIDLoadData />
+              </ChildContent>
+            </RadzenFormField>
+          </RadzenStack>
+          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+

@@ -1,0 +1,76 @@
+@page "/edit-assessment-setup"
+@attribute [Authorize]
+
+<PageTitle>Edit AssessmentSetup</PageTitle>
+<RadzenRow>
+    <RadzenColumn SizeMD="9">
+    <RadzenLabel style="font-weight: bold" Text="Item no longer available." Visible="@(!canEdit)" />
+    </RadzenColumn>
+    <RadzenColumn SizeMD="3">
+    <RadzenButton ButtonStyle="ButtonStyle.Secondary" style="margin-bottom: 20px" Text="Close" Visible="@(!canEdit)" Click="@CancelButtonClick" />
+    </RadzenColumn>
+</RadzenRow>
+<RadzenRow>
+    <RadzenColumn SizeMD="9">
+    <RadzenLabel style="font-weight: bold" Text="Another user has made conflicting changes to one or more of the fields you have modified. Please reload." Visible="@hasChanges" />
+    </RadzenColumn>
+    <RadzenColumn SizeMD="3">
+    <RadzenButton ButtonStyle="ButtonStyle.Secondary" Icon="autorenew" style="margin-bottom: 20px" Text="Reload" Visible="@hasChanges" Click="@ReloadButtonClick" />
+    </RadzenColumn>
+</RadzenRow>
+
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save AssessmentSetup</RadzenAlert>
+        <RadzenTemplateForm TItem="PrimarySchoolCA.Server.Models.ConData.AssessmentSetup" Data="@assessmentSetup" Visible="@(assessmentSetup != null && canEdit)" Submit="@FormSubmit">
+          <RadzenStack>
+            <RadzenFormField Text="Marks Obtainable" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@assessmentSetup.MarksObtainable" Name="MarksObtainable" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="MarksObtainable" Text="MarksObtainable is required" />
+                  </Helper>
+            </RadzenFormField>
+            <RadzenFormField Text="Academic Session" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDown Data="@academicSessionsForAcademicSessionID" TextProperty="AcademicSessionName" ValueProperty="AcademicSessionID" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@assessmentSetup.AcademicSessionID" Name="AcademicSessionID"
+                         Count=@academicSessionsForAcademicSessionIDCount LoadData=@academicSessionsForAcademicSessionIDLoadData />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Assessment Type" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDown Data="@assessmentTypesForAssessmentTypeID" TextProperty="AssessmentTypeName" ValueProperty="AssessmentTypeID" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@assessmentSetup.AssessmentTypeID" Name="AssessmentTypeID"
+                         Count=@assessmentTypesForAssessmentTypeIDCount LoadData=@assessmentTypesForAssessmentTypeIDLoadData />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="School Class" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDown Data="@schoolClassesForSchoolClassID" TextProperty="SchoolClassName" ValueProperty="SchoolClassID" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@assessmentSetup.SchoolClassID" Name="SchoolClassID"
+                         Count=@schoolClassesForSchoolClassIDCount LoadData=@schoolClassesForSchoolClassIDLoadData />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Subject" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDown Data="@subjectsForSubjectID" TextProperty="SubjectName" ValueProperty="SubjectID" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@assessmentSetup.SubjectID" Name="SubjectID"
+                         Count=@subjectsForSubjectIDCount LoadData=@subjectsForSubjectIDLoadData />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Term" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDown Data="@termsForTermID" TextProperty="TermName" ValueProperty="TermID" AllowClear=true
+                          style="display: block; width: 100%" @bind-Value="@assessmentSetup.TermID" Name="TermID"
+                         Count=@termsForTermIDCount LoadData=@termsForTermIDLoadData />
+              </ChildContent>
+            </RadzenFormField>
+          </RadzenStack>
+          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+

@@ -1,0 +1,107 @@
+@page "/students"
+
+@attribute [Authorize]
+<PageTitle>Students</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Students" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenSplitButton Icon="get_app" Text="Export" Click="@ExportClick" Variant="Variant.Flat" Shade="Shade.Lighter">
+                    <RadzenSplitButtonItem Text="Excel" Value="xlsx" />
+                    <RadzenSplitButtonItem Text="CSV" Value="csv" />
+                </RadzenSplitButton>
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenTextBox Placeholder="Search ..." style="display: block; width: 100%" @oninput="@Search" />
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"  AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@students" Count=count LoadData=@Grid0LoadData  TItem="PrimarySchoolCA.Server.Models.ConData.Student" RowDoubleClick="@EditRow" RowExpand=@GetChildData>
+            <Columns>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.Student" Property="StudentID" Title="Student I D">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.Student" Property="AdmissionNumber" Title="Admission Number">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.Student" Property="FirstName" Title="First Name">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.Student" Property="MiddleName" Title="Middle Name">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.Student" Property="LastName" Title="Last Name">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.Student" Property="DateOfBirth" Title="Date Of Birth">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.Student" Property="PassportPhoto" Title="Passport Photo">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.Student" Property="Gender.GenderName" Title="Gender">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.Student" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="student">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, student)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+            <Template Context="student">
+
+                    <RadzenStack Class="rz-my-8">
+                        <RadzenRow Gap="0" AlignItems="AlignItems.Center">
+                            <RadzenColumn Size="12" SizeMD="6">
+                                <RadzenText Visible="@(student != null)" Text="ParentsOrGuardians" TextStyle="TextStyle.H4" TagName="TagName.H2" style="margin: 0" />
+                            </RadzenColumn>
+                            <RadzenColumn Size="12" SizeMD="6">
+                                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                                    <RadzenButton Visible="@(student != null)" Icon="add_circle_outline" Text="Add" Click=@(args => ParentsOrGuardiansAddButtonClick(args,student)) />
+                                </RadzenStack>
+                            </RadzenColumn>
+                        </RadzenRow>
+                        <RadzenDataGrid ColumnWidth="200px" Visible="@(student != null)" @ref=ParentsOrGuardiansDataGrid AllowFiltering="true" FilterMode="Radzen.FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+                          Data="@student?.ParentsOrGuardians" TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian"  RowDoubleClick="@(args => ParentsOrGuardiansRowSelect(args, student))">
+                          <Columns>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="ParentOrGuardianID" Title="Parent Or Guardian I D">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="FirstName" Title="First Name">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="MiddleName" Title="Middle Name">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="LastName" Title="Last Name">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="ResidentialAddress" Title="Residential Address">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="Town" Title="Town">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="PhoneNumber1" Title="Phone Number1">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="PhoneNumber2" Title="Phone Number2">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="EmailAddress" Title="Email Address">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="Gender.GenderName" Title="Gender">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="LocalGovtArea.LgaName" Title="Local Govt Area">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="State.StateName" Title="State">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Property="Student.AdmissionNumber" Title="Student">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ParentsOrGuardian" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                                <Template Context="parentsOrGuardianChild">
+                                    <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium" Shade="Shade.Lighter" Variant="Variant.Flat"
+                                        Click=@(args => ParentsOrGuardiansDeleteButtonClick(args, parentsOrGuardianChild)) @onclick:stopPropagation="true" />
+                                </Template>
+                            </RadzenDataGridColumn>
+                          </Columns>
+                        </RadzenDataGrid>
+                    </RadzenStack>
+            </Template>
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>

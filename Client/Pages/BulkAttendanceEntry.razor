@@ -1,0 +1,77 @@
+@page "/bulk-attendance-entry"
+@inject Microsoft.Extensions.Localization.IStringLocalizer<BulkAttendanceEntry> L
+
+@attribute [Authorize]
+@using Radzen
+@using Radzen.Blazor
+@using PrimarySchoolCA.Server.Models.ConData
+
+<PageTitle>Bulk Attendance Entry</PageTitle>
+<RadzenRow>
+    <RadzenColumn Size="12">
+        <RadzenText Text="Bulk Attendance Entry" TextStyle="TextStyle.H3" TagName="TagName.H1" />
+    </RadzenColumn>
+</RadzenRow>
+<RadzenRow>
+<RadzenColumn Size="3">
+<RadzenLabel Style="width: 100%" Text="Academic Session" Component="AcademicSessionID"></RadzenLabel>
+</RadzenColumn>
+<RadzenColumn Size="9">
+    <RadzenDropDown TValue="int" ValueProperty="AcademicSessionID" TextProperty="AcademicSessionName" Data="@academicSessions" LoadData="@academicSessionsLoadData" Count="@academicSessionsCount" Name="AcademicSessionID" Style="width: 100%" Placeholder="Select Academic Session" @bind-Value="@academicSessionID" />
+     <RadzenRequiredValidator Component="AcademicSessionID" DefaultValue="0" style="position: absolute" Text="Academic Session is required">
+        </RadzenRequiredValidator>
+
+</RadzenColumn>
+</RadzenRow>
+<RadzenRow>
+<RadzenColumn Size="3">
+<RadzenLabel Style="width: 100%" Text="Term" Component="TermID"></RadzenLabel>
+</RadzenColumn>
+<RadzenColumn Size="9">
+    <RadzenDropDown TValue="int" ValueProperty="TermID" TextProperty="TermName" Data="@terms" LoadData="@termsLoadData" Count="@termsCount" Name="TermID" Style="width: 100%" Placeholder="Select Term" @bind-Value="@termID" />
+   <RadzenRequiredValidator Component="TermID" DefaultValue="0" style="position: absolute" Text="Term is required">
+        </RadzenRequiredValidator>
+</RadzenColumn>
+</RadzenRow>
+
+<RadzenRow>
+<RadzenColumn Size="3">
+<RadzenLabel Style="width: 100%" Text="Class" Component="SchoolClassID"></RadzenLabel>
+</RadzenColumn>
+<RadzenColumn Size="9">
+    <RadzenDropDown TValue="int" ValueProperty="SchoolClassID" TextProperty="SchoolClassName" Data="@schoolClasses" LoadData="@schoolClassesLoadData" Count="@schoolClassesCount" Name="SchoolClassID" Style="width: 100%" Placeholder="Select Class" @bind-Value="@schoolClassID" />
+     <RadzenRequiredValidator Component="SchoolClassID" DefaultValue="0" style="position: absolute" Text="Class is required">
+        </RadzenRequiredValidator>
+</RadzenColumn>
+</RadzenRow>
+ <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="search" Text="Fetch" Variant="Variant.Flat" Click="@FetchRegisterClick"/>
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelFetchRegisterClick"   />
+          </RadzenStack>
+          <RadzenRow>
+<RadzenColumn Size="12">
+ <RadzenTabs>
+ <Tabs>
+ <RadzenTabsItem Text="Class Register">
+     <RadzenDataGrid TItem="AttendanceViewModel" Data="@students">
+         <Columns>
+             <RadzenDataGridColumn TItem="AttendanceViewModel" Property="AdmissionNumber" Title="Admission Number"></RadzenDataGridColumn>
+             <RadzenDataGridColumn TItem="AttendanceViewModel" Property="FirstName" Title="First Name"></RadzenDataGridColumn>
+             <RadzenDataGridColumn TItem="AttendanceViewModel" Property="LastName" Title="Last Name"></RadzenDataGridColumn>
+             <RadzenDataGridColumn TItem="AttendanceViewModel" Property="Present" Title="Present">
+                 <Template>
+                     <RadzenCheckBox TValue="bool" Name="chkPresent" @bind-Value="@context.Present"></RadzenCheckBox>
+                 </Template>
+             </RadzenDataGridColumn>
+         </Columns>
+     </RadzenDataGrid>
+ </RadzenTabsItem>
+ </Tabs>
+ </RadzenTabs>
+</RadzenColumn>
+
+</RadzenRow>
+<RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save Attendance" Variant="Variant.Flat" Click="@TakeAttendanceClick" />
+    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelFetchRegisterClick" />
+</RadzenStack>

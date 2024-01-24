@@ -1,0 +1,24 @@
+@page "/add-school-class"
+@attribute [Authorize]
+
+<PageTitle>Add SchoolClass</PageTitle>
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save SchoolClass</RadzenAlert>
+        <RadzenTemplateForm TItem="PrimarySchoolCA.Server.Models.ConData.SchoolClass" Data="@schoolClass" Visible="@(schoolClass != null && canEdit)" Submit="@FormSubmit">
+          <RadzenStack>
+            <RadzenFormField Text="School Class Name" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@schoolClass.SchoolClassName" Name="SchoolClassName" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="SchoolClassName" Text="SchoolClassName is required" />
+                  </Helper>
+            </RadzenFormField>
+          </RadzenStack>
+          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+

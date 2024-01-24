@@ -1,0 +1,39 @@
+@page "/edit-class-register-student"
+@attribute [Authorize]
+
+<PageTitle>Edit ClassRegisterStudent</PageTitle>
+
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save ClassRegisterStudent</RadzenAlert>
+        <RadzenTemplateForm TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegisterStudent" Data="@classRegisterStudent" Visible="@(classRegisterStudent != null)" Submit="@FormSubmit">
+          <RadzenStack>
+            <RadzenFormField Text="Date Added" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDatePicker DateFormat="dd/MM/yyyy" style="display: block; width: 100%" @bind-Value="@classRegisterStudent.DateAdded" Name="DateAdded" />
+                  </ChildContent>    
+                  <Helper>
+                    <RadzenRequiredValidator Component="DateAdded" Text="DateAdded is required" />
+                  </Helper>
+            </RadzenFormField>
+            <RadzenFormField Text="Class Register" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDown Data="@classRegistersForClassRegisterID" TextProperty="" ValueProperty="ClassRegisterID" AllowClear=true
+                        Disabled=@(hasClassRegisterIDValue)  style="display: block; width: 100%" @bind-Value="@classRegisterStudent.ClassRegisterID" Name="ClassRegisterID"
+                         Count=@classRegistersForClassRegisterIDCount LoadData=@classRegistersForClassRegisterIDLoadData />
+              </ChildContent>
+            </RadzenFormField>
+            <RadzenFormField Text="Student" Variant="Variant.Filled">
+                  <ChildContent>
+                    <RadzenDropDown Data="@studentsForStudentID" TextProperty="AdmissionNumber" ValueProperty="StudentID" AllowClear=true
+                        Disabled=@(hasStudentIDValue)  style="display: block; width: 100%" @bind-Value="@classRegisterStudent.StudentID" Name="StudentID"
+                         Count=@studentsForStudentIDCount LoadData=@studentsForStudentIDLoadData />
+              </ChildContent>
+            </RadzenFormField>
+          </RadzenStack>
+          <RadzenStack style="margin-top:1rem;" Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+

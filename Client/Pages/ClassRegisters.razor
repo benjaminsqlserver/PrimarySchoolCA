@@ -1,0 +1,81 @@
+@page "/class-registers"
+
+@attribute [Authorize]
+
+<PageTitle>ClassRegisters</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="ClassRegisters" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenSplitButton Icon="get_app" Text="Export" Click="@ExportClick" Variant="Variant.Flat" Shade="Shade.Lighter">
+                    <RadzenSplitButtonItem Text="Excel" Value="xlsx" />
+                    <RadzenSplitButtonItem Text="CSV" Value="csv" />
+                </RadzenSplitButton>
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenTextBox Placeholder="Search ..." style="display: block; width: 100%" @oninput="@Search" />
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"  AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@classRegisters" Count=count LoadData=@Grid0LoadData  TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegister" RowDoubleClick="@EditRow" RowExpand=@GetChildData>
+            <Columns>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegister" Property="ClassRegisterID" Title="Class Register ID">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegister" Property="AcademicSession.AcademicSessionName" Title="Academic Session">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegister" Property="SchoolClass.SchoolClassName" Title="School Class">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegister" Property="Term.TermName" Title="Term">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegister" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="classRegister">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, classRegister)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+            <Template Context="classRegister">
+
+                    <RadzenStack Class="rz-my-8">
+                        <RadzenRow Gap="0" AlignItems="AlignItems.Center">
+                            <RadzenColumn Size="12" SizeMD="6">
+                                <RadzenText Visible="@(classRegister != null)" Text="ClassRegisterStudents" TextStyle="TextStyle.H4" TagName="TagName.H2" style="margin: 0" />
+                            </RadzenColumn>
+                            <RadzenColumn Size="12" SizeMD="6">
+                                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                                    <RadzenButton Visible="@(classRegister != null)" Icon="add_circle_outline" Text="Add" Click=@(args => ClassRegisterStudentsAddButtonClick(args,classRegister)) />
+                                </RadzenStack>
+                            </RadzenColumn>
+                        </RadzenRow>
+                        <RadzenDataGrid ColumnWidth="200px" Visible="@(classRegister != null)" @ref=ClassRegisterStudentsDataGrid AllowFiltering="true" FilterMode="Radzen.FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+                          Data="@classRegister?.ClassRegisterStudents" TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegisterStudent"  RowDoubleClick="@(args => ClassRegisterStudentsRowSelect(args, classRegister))">
+                          <Columns>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegisterStudent" Property="ID" Title="ID">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegisterStudent" Property="DateAdded" Title="Date Added">
+                            </RadzenDataGridColumn>
+                          
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegisterStudent" Property="Student.StudentDetails" Title="Student">
+                            </RadzenDataGridColumn>
+                            <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ClassRegisterStudent" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                                <Template Context="classRegisterStudentChild">
+                                    <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium" Shade="Shade.Lighter" Variant="Variant.Flat"
+                                        Click=@(args => ClassRegisterStudentsDeleteButtonClick(args, classRegisterStudentChild)) @onclick:stopPropagation="true" />
+                                </Template>
+                            </RadzenDataGridColumn>
+                          </Columns>
+                        </RadzenDataGrid>
+                    </RadzenStack>
+            </Template>
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>
