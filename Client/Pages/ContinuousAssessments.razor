@@ -1,0 +1,62 @@
+@page "/continuous-assessments"
+
+@attribute [Authorize]
+
+<PageTitle>ContinuousAssessments</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="ContinuousAssessments" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenSplitButton Icon="get_app" Text="Export" Click="@ExportClick" Variant="Variant.Flat" Shade="Shade.Lighter">
+                    <RadzenSplitButtonItem Text="Excel" Value="xlsx" />
+                    <RadzenSplitButtonItem Text="CSV" Value="csv" />
+                </RadzenSplitButton>
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenTextBox Placeholder="Search ..." style="display: block; width: 100%" @oninput="@Search" />
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@continuousAssessments" LoadData="@Grid0LoadData" Count="@count" TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" RowDoubleClick="@EditRow">
+            <Columns>
+               
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Property="RecordID" Title="Record I D">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Property="CAMarkObtainable" Title="C A Mark Obtainable">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Property="CAMarkObtained" Title="C A Mark Obtained">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Property="EntryDate" Title="Entry Date">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Property="InsertedBy" Title="Inserted By">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Property="AcademicSession.AcademicSessionName" Title="Academic Session">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Property="SchoolClass.SchoolClassName" Title="School Class">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Property="Student.StudentDetails" Title="Student">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Property="Subject.SubjectName" Title="Subject">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Property="Term.TermName" Title="Term">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="continuousAssessment">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, continuousAssessment)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>

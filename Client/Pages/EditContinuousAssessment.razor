@@ -1,0 +1,105 @@
+@page "/edit-continuous-assessment"
+
+@attribute [Authorize]
+
+<PageTitle>Edit ContinuousAssessment</PageTitle>
+<RadzenRow>
+    <RadzenColumn SizeMD="9">
+    <RadzenLabel style="font-weight: bold" Text="Item no longer available." Visible="@(!canEdit)" />
+    </RadzenColumn>
+    <RadzenColumn SizeMD="3">
+    <RadzenButton ButtonStyle="ButtonStyle.Secondary" style="margin-bottom: 20px" Text="Close" Visible="@(!canEdit)" Click="@CancelButtonClick" />
+    </RadzenColumn>
+</RadzenRow>
+<RadzenRow>
+    <RadzenColumn SizeMD="9">
+    <RadzenLabel style="font-weight: bold" Text="Another user has made conflicting changes to one or more of the fields you have modified. Please reload." Visible="@hasChanges" />
+    </RadzenColumn>
+    <RadzenColumn SizeMD="3">
+    <RadzenButton ButtonStyle="ButtonStyle.Secondary" Icon="autorenew" style="margin-bottom: 20px" Text="Reload" Visible="@hasChanges" Click="@ReloadButtonClick" />
+    </RadzenColumn>
+</RadzenRow>
+
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save ContinuousAssessment</RadzenAlert>
+        <RadzenTemplateForm TItem="PrimarySchoolCA.Server.Models.ConData.ContinuousAssessment" Data="@continuousAssessment" Visible="@(continuousAssessment != null && canEdit)" Submit="@FormSubmit">
+          
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="C A Mark Obtainable" Component="CAMarkObtainable" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@continuousAssessment.CAMarkObtainable" Name="CAMarkObtainable" />
+                    <RadzenRequiredValidator Component="CAMarkObtainable" Text="CAMarkObtainable is required" />
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="C A Mark Obtained" Component="CAMarkObtained" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@continuousAssessment.CAMarkObtained" Name="CAMarkObtained" />
+                    <RadzenRequiredValidator Component="CAMarkObtained" Text="CAMarkObtained is required" />
+                </RadzenColumn>
+            </RadzenRow>
+          
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Academic Session" Component="AcademicSession" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenDropDownDataGrid Data="@academicSessionsForAcademicSessionID" TextProperty="AcademicSessionName" ValueProperty="AcademicSessionID" AllowClear=true
+                         Placeholder="Choose AcademicSession" style="display: block; width: 100%" @bind-Value="@continuousAssessment.AcademicSessionID" Name="AcademicSessionID"
+                        SelectedValue=@academicSessionsForAcademicSessionIDValue Count=@academicSessionsForAcademicSessionIDCount LoadData=@academicSessionsForAcademicSessionIDLoadData />
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="School Class" Component="SchoolClass" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenDropDownDataGrid Data="@schoolClassesForSchoolClassID" TextProperty="SchoolClassName" ValueProperty="SchoolClassID" AllowClear=true
+                         Placeholder="Choose SchoolClass" style="display: block; width: 100%" @bind-Value="@continuousAssessment.SchoolClassID" Name="SchoolClassID"
+                        SelectedValue=@schoolClassesForSchoolClassIDValue Count=@schoolClassesForSchoolClassIDCount LoadData=@schoolClassesForSchoolClassIDLoadData />
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Student" Component="Student" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenDropDownDataGrid TValue="long" ValueProperty="StudentID" TextProperty="StudentDetail" Data="@studentListForParentGuardianDropdowns" AllowSorting="true" AllowPaging="true" AllowFiltering="true" LoadData="@studentListForParentGuardianDropdownsLoadData" Count="@studentListForParentGuardianDropdownsCount" SelectedValue=@studentsForStudentIDValue Placeholder="Choose Student" @bind-Value="@continuousAssessment.StudentID" AllowClear=true Name="StudentID" Style="width: 100%" >
+                        <Columns>
+                            <RadzenDropDownDataGridColumn Property="StudentDetail" Title="StudentDetail" />
+                            <RadzenDropDownDataGridColumn Property="StudentID" Title="StudentID" />
+                        </Columns>
+                    </RadzenDropDownDataGrid>
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Subject" Component="Subject" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenDropDownDataGrid Data="@subjectsForSubjectID" TextProperty="SubjectName" ValueProperty="SubjectID" AllowClear=true
+                         Placeholder="Choose Subject" style="display: block; width: 100%" @bind-Value="@continuousAssessment.SubjectID" Name="SubjectID"
+                        SelectedValue=@subjectsForSubjectIDValue Count=@subjectsForSubjectIDCount LoadData=@subjectsForSubjectIDLoadData />
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Term" Component="Term" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenDropDownDataGrid Data="@termsForTermID" TextProperty="TermName" ValueProperty="TermID" AllowClear=true
+                         Placeholder="Choose Term" style="display: block; width: 100%" @bind-Value="@continuousAssessment.TermID" Name="TermID"
+                        SelectedValue=@termsForTermIDValue Count=@termsForTermIDCount LoadData=@termsForTermIDLoadData />
+                </RadzenColumn>
+            </RadzenRow>
+          <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+

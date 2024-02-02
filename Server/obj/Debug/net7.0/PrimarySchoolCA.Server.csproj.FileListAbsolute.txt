@@ -101,3 +101,9 @@ C:\PrimarySchoolApp\Server\bin\Debug\net7.0\en\PrimarySchoolCA.Client.resources.
 C:\PrimarySchoolApp\Server\bin\Debug\net7.0\fr-FR\PrimarySchoolCA.Client.resources.dll
 C:\PrimarySchoolApp\Server\bin\Debug\net7.0\Microsoft.AspNetCore.HeaderPropagation.dll
 C:\PrimarySchoolApp\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\PrimarySchoolApp\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+C:\PrimarySchoolApp\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.dll
+C:\PrimarySchoolApp\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+C:\PrimarySchoolApp\Server\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\PrimarySchoolApp\Server\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\PrimarySchoolApp\Server\obj\Debug\net7.0\PrimarySchoolCA.Server.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrimarySchoolCA.Client")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute(" ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75122202d4d1b9d1d1164067b6c347ef77b25481")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrimarySchoolCA.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrimarySchoolCA.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

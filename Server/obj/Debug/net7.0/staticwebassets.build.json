@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2Z75DPmW8Yom8gCaT3oG9Mvy9Jf0DFmHPl3N8mD0X6s=",
+  "Hash": "SoFSq6T0+ccpjYrtkJjyFZPKreGqJehmuXO+KS2Dfuc=",
   "Source": "PrimarySchoolCA.Server",
   "BasePath": "_content/PrimarySchoolCA.Server",
   "Mode": "Default",
@@ -216,7 +216,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.14\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
@@ -254,7 +254,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.14\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -406,7 +406,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.14\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -824,7 +824,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
@@ -862,7 +862,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Options.dll"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\lib\\net7.0\\Microsoft.Extensions.Options.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
@@ -1090,7 +1090,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\lib\\net7.0\\Radzen.Blazor.dll"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\lib\\net7.0\\Radzen.Blazor.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.AppContext.dll",
@@ -2154,7 +2154,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\system.linq.dynamic.core\\1.3.0\\lib\\net7.0\\System.Linq.Dynamic.Core.dll"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\system.linq.dynamic.core\\1.3.7\\lib\\net7.0\\System.Linq.Dynamic.Core.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Linq.Expressions.dll",
@@ -4228,6 +4228,25 @@
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.Primitives.dll"
     },
     {
+      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\09kqsrpz3g.gz",
+      "SourceId": "PrimarySchoolCA.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll"
+    },
+    {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\0ax0mpukyg.gz",
       "SourceId": "PrimarySchoolCA.Client",
       "SourceType": "Project",
@@ -4741,6 +4760,25 @@
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Diagnostics.FileVersionInfo.dll"
     },
     {
+      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\56iqi7qkio.gz",
+      "SourceId": "PrimarySchoolCA.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
+    },
+    {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\5bwtybt0i7.gz",
       "SourceId": "PrimarySchoolCA.Client",
       "SourceType": "Project",
@@ -4817,25 +4855,6 @@
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.Encoding.dll"
     },
     {
-      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\5p5g4afpss.gz",
-      "SourceId": "PrimarySchoolCA.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll"
-    },
-    {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\612xbqgkc6.gz",
       "SourceId": "PrimarySchoolCA.Client",
       "SourceType": "Project",
@@ -4891,25 +4910,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.dll"
-    },
-    {
-      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\6m9f3ijw86.gz",
-      "SourceId": "PrimarySchoolCA.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\6nyv203jut.gz",
@@ -5083,6 +5083,25 @@
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Claims.dll"
     },
     {
+      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\8dr70b6fpy.gz",
+      "SourceId": "PrimarySchoolCA.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Radzen.Blazor.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Radzen.Blazor.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Radzen.Blazor.dll"
+    },
+    {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\8frpgsa7uc.gz",
       "SourceId": "PrimarySchoolCA.Client",
       "SourceType": "Project",
@@ -5100,25 +5119,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Stores.dll"
-    },
-    {
-      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\8mbnag4aro.gz",
-      "SourceId": "PrimarySchoolCA.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Radzen.Blazor.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Radzen.Blazor.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Radzen.Blazor.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\8od4vc89gq.gz",
@@ -5233,25 +5233,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Dynamic.Runtime.dll"
-    },
-    {
-      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\a2l4xfj6zd.gz",
-      "SourceId": "PrimarySchoolCA.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Linq.Dynamic.Core.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Linq.Dynamic.Core.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Linq.Dynamic.Core.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\a954voojs5.gz",
@@ -5632,25 +5613,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Private.DataContractSerialization.dll"
-    },
-    {
-      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\dss8h7v0v3.gz",
-      "SourceId": "PrimarySchoolCA.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\dtfj5bth69.gz",
@@ -6166,6 +6128,25 @@
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.WebHeaderCollection.dll"
     },
     {
+      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\gyotrcuz43.gz",
+      "SourceId": "PrimarySchoolCA.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
+    },
+    {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\h57wd43c7m.gz",
       "SourceId": "PrimarySchoolCA.Client",
       "SourceType": "Project",
@@ -6468,25 +6449,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\dotnet.7.0.14.jehrbbfw5k.js"
-    },
-    {
-      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\jhs8hzj59b.gz",
-      "SourceId": "PrimarySchoolCA.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\jpphg8afpc.gz",
@@ -6850,25 +6812,6 @@
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll"
     },
     {
-      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\mbuyl9iidf.gz",
-      "SourceId": "PrimarySchoolCA.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
-    },
-    {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\mogdsoj7sy.gz",
       "SourceId": "PrimarySchoolCA.Client",
       "SourceType": "Project",
@@ -6962,6 +6905,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.Algorithms.dll"
+    },
+    {
+      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\n8svxcuss9.gz",
+      "SourceId": "PrimarySchoolCA.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Linq.Dynamic.Core.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Linq.Dynamic.Core.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Linq.Dynamic.Core.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\nnjyvkjccf.gz",
@@ -7437,6 +7399,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Xml.XmlSerializer.dll"
+    },
+    {
+      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\rur61c6pmf.gz",
+      "SourceId": "PrimarySchoolCA.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\s2d128jhod.gz",
@@ -8294,6 +8275,25 @@
       "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.Metadata.dll"
     },
     {
+      "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\zqtlztw1yz.gz",
+      "SourceId": "PrimarySchoolCA.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\PrimarySchoolApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
+    },
+    {
       "Identity": "C:\\PrimarySchoolApp\\Client\\obj\\Debug\\net7.0\\compressed\\zqu69d0d9o.gz",
       "SourceId": "PrimarySchoolCA.Client",
       "SourceType": "Project",
@@ -8579,10 +8579,10 @@
       "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.0\\staticwebassets\\AuthenticationService.js"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\dark-base.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\dark-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/dark-base.css",
       "AssetKind": "All",
@@ -8595,13 +8595,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\dark-base.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\dark-base.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\dark.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\dark.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/dark.css",
       "AssetKind": "All",
@@ -8614,13 +8614,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\dark.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\dark.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\default-base.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\default-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/default-base.css",
       "AssetKind": "All",
@@ -8633,13 +8633,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\default-base.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\default-base.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\default.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\default.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/default.css",
       "AssetKind": "All",
@@ -8652,13 +8652,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\default.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\default.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\fluent-base.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\fluent-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/fluent-base.css",
       "AssetKind": "All",
@@ -8671,13 +8671,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\fluent-base.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\fluent-base.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\fluent-dark-base.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\fluent-dark-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/fluent-dark-base.css",
       "AssetKind": "All",
@@ -8690,13 +8690,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\fluent-dark-base.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\fluent-dark-base.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\fluent-dark.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\fluent-dark.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/fluent-dark.css",
       "AssetKind": "All",
@@ -8709,13 +8709,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\fluent-dark.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\fluent-dark.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\fluent.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\fluent.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/fluent.css",
       "AssetKind": "All",
@@ -8728,13 +8728,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\fluent.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\fluent.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\humanistic-base.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\humanistic-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/humanistic-base.css",
       "AssetKind": "All",
@@ -8747,13 +8747,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\humanistic-base.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\humanistic-base.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\humanistic.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\humanistic.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/humanistic.css",
       "AssetKind": "All",
@@ -8766,13 +8766,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\humanistic.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\humanistic.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material-base.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material-base.css",
       "AssetKind": "All",
@@ -8785,13 +8785,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material-base.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material-base.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material-dark-base.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material-dark-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material-dark-base.css",
       "AssetKind": "All",
@@ -8804,13 +8804,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material-dark-base.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material-dark-base.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material-dark.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material-dark.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material-dark.css",
       "AssetKind": "All",
@@ -8823,13 +8823,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material-dark.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material-dark.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material.css",
       "AssetKind": "All",
@@ -8842,13 +8842,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material3-base.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material3-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material3-base.css",
       "AssetKind": "All",
@@ -8861,13 +8861,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material3-base.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material3-base.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material3-dark-base.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material3-dark-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material3-dark-base.css",
       "AssetKind": "All",
@@ -8880,13 +8880,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material3-dark-base.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material3-dark-base.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material3-dark.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material3-dark.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material3-dark.css",
       "AssetKind": "All",
@@ -8899,13 +8899,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material3-dark.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material3-dark.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material3.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material3.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material3.css",
       "AssetKind": "All",
@@ -8918,13 +8918,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\material3.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\material3.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\software-base.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\software-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/software-base.css",
       "AssetKind": "All",
@@ -8937,13 +8937,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\software-base.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\software-base.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\software.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\software.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/software.css",
       "AssetKind": "All",
@@ -8956,13 +8956,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\software.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\software.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\standard-base.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\standard-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/standard-base.css",
       "AssetKind": "All",
@@ -8975,13 +8975,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\standard-base.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\standard-base.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\standard.css",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\standard.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/standard.css",
       "AssetKind": "All",
@@ -8994,13 +8994,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\css\\standard.css"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\css\\standard.css"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\MaterialIcons-Regular.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\MaterialIcons-Regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/MaterialIcons-Regular.woff",
       "AssetKind": "All",
@@ -9013,13 +9013,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\MaterialIcons-Regular.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\MaterialIcons-Regular.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v15-latin-300.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v15-latin-300.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-300.woff",
       "AssetKind": "All",
@@ -9032,13 +9032,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v15-latin-300.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v15-latin-300.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v15-latin-700.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v15-latin-700.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-700.woff",
       "AssetKind": "All",
@@ -9051,13 +9051,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v15-latin-700.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v15-latin-700.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-regular.woff",
       "AssetKind": "All",
@@ -9070,13 +9070,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v30-latin-300.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v30-latin-300.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-300.woff",
       "AssetKind": "All",
@@ -9089,13 +9089,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v30-latin-300.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v30-latin-300.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v30-latin-500.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v30-latin-500.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-500.woff",
       "AssetKind": "All",
@@ -9108,13 +9108,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v30-latin-500.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v30-latin-500.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v30-latin-700.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v30-latin-700.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-700.woff",
       "AssetKind": "All",
@@ -9127,13 +9127,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v30-latin-700.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v30-latin-700.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v30-latin-regular.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v30-latin-regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-regular.woff",
       "AssetKind": "All",
@@ -9146,13 +9146,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\roboto-v30-latin-regular.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\roboto-v30-latin-regular.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-Black.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-Black.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Black.woff",
       "AssetKind": "All",
@@ -9165,13 +9165,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-Black.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-Black.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BlackIt.woff",
       "AssetKind": "All",
@@ -9184,13 +9184,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-Bold.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-Bold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Bold.woff",
       "AssetKind": "All",
@@ -9203,13 +9203,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-Bold.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-Bold.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BoldIt.woff",
       "AssetKind": "All",
@@ -9222,13 +9222,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLight.woff",
       "AssetKind": "All",
@@ -9241,13 +9241,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLightIt.woff",
       "AssetKind": "All",
@@ -9260,13 +9260,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-It.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-It.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-It.woff",
       "AssetKind": "All",
@@ -9279,13 +9279,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-It.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-It.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-Light.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-Light.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Light.woff",
       "AssetKind": "All",
@@ -9298,13 +9298,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-Light.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-Light.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-LightIt.woff",
       "AssetKind": "All",
@@ -9317,13 +9317,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-Regular.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-Regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Regular.woff",
       "AssetKind": "All",
@@ -9336,13 +9336,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-Regular.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-Regular.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Semibold.woff",
       "AssetKind": "All",
@@ -9355,13 +9355,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-SemiboldIt.woff",
       "AssetKind": "All",
@@ -9374,13 +9374,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\Radzen.Blazor.js",
+      "Identity": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\Radzen.Blazor.js",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "Radzen.Blazor.js",
       "AssetKind": "All",
@@ -9393,7 +9393,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.22.1\\staticwebassets\\Radzen.Blazor.js"
+      "OriginalItemSpec": "C:\\Users\\user\\.nuget\\packages\\radzen.blazor\\4.24.2\\staticwebassets\\Radzen.Blazor.js"
     }
   ]
 }
